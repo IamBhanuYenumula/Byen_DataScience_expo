@@ -43,6 +43,7 @@ Key Tasks in EDA:
     • Decision Trees: Create a tree-like model for classification or regression (e.g., predicting customer preferences).
 
 Can you describe the steps you follow during an EDA process?
+
 Exploratory Data Analysis (EDA) is a crucial phase in understanding and preparing data for further analysis. Let’s explore the steps involved:
 Dataset Overview and Descriptive Statistics:
     • Objective: Get a high-level understanding of the dataset.
@@ -71,6 +72,7 @@ Data Quality Evaluation:
 Remember that EDA is iterative, and you’ll often revisit these steps as you gain insights. It’s the foundation for subsequent tasks like data preprocessing, model building, and analysis.
 
 What do you understand by the term 'outlier' in data analysis? How can you identify and treat outliers during EDA?
+
  In the realm of data analysis, outliers are like rogue notes in a symphony—they disrupt the harmony of insights and can lead to skewed results and erroneous conclusions. Let’s explore their significance and techniques for handling them during Exploratory Data Analysis (EDA):
 1. Importance of Outlier Detection:
 • Statistical Misrepresentation: Outliers distort essential statistical metrics like the mean and standard deviation, leading to inaccurate summaries of the data.
@@ -146,7 +148,6 @@ Analysis Techniques:
 • Categorical data is sometimes called qualitative data.
 • Numerical data is also referred to as quantitative data.
 Remember that the choice of analysis depends on the data type. Categorical data provides insights into characteristics, while numerical data allows precise measurements and statistical analysis.
-
 
 What is the role of correlation and covariance in EDA?
 roles of correlation and covariance in Exploratory Data Analysis (EDA):
