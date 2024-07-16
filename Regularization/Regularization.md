@@ -56,7 +56,7 @@ In L1 norm we use mod |m| instead of squares.
 
 Using this new formula we need to calculate the loss function of both the curves and let ML model choose the curve with low loss function value.
 
-## 5 key understandings about Ridge regression:
+## key understandings about Ridge regression:
 1. How the coefficients get affected
     ○ When we add lambda value (which will be between 0 - α ), all the coefficients will be shrink towards zero, but the values will never be zero. 
 2. Higher values are impacted
@@ -85,7 +85,7 @@ Where:
 If we are working on a high dimensional data, for example: x1,x2,x3…..xn. The chances of overfitting in high dimensional data is very high. If we apply Ridge regression on this data the coefficients will not become zero. Whereas, if we apply Lasso regression for this dataset and if we increase lambda value sightly, it will make the less weights coefficients as zero. This means that Lasso regression is inherently performing feature selection. 
 In other words, Lasso regression is letting us know the less important features in the dataset and by making their coefficients value as zero it is performing dimensionality reduction. 
 
-## 5 key understandings about Lasso regression:
+## key understandings about Lasso regression:
 1. How the coefficients get affected
         ○ When we add lambda value (which will be between 0 - α ), all the coefficients will be shrink to zero. 
 2. Higher values are impacted
