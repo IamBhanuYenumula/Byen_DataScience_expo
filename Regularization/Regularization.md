@@ -56,3 +56,18 @@ In L1 norm we use mod |m| instead of squares.
 
 Using this new formula we need to calculate the loss function of both the curves and let ML model choose the curve with low loss function value.
 
+## 5 key understandings about Ridge regression:
+1. How the coefficients get affected
+    ○ When we add lambda value (which will be between 0 - α ), all the coefficients will be shrink towards zero, but the values will never be zero. 
+2. Higher values are impacted
+    ○ Coefficients with higher values will shrink more compared to coefficients with less values
+3. Bias variance tradeoff
+    ○ Bias and Variance depends on lambda value: 
+        § If lambda value is close to 0, model will show a Overfit tendency where you will notice a decrease in bias and increase in variance
+        § If lambda value is high, model will show Underfit tendency where you notice a decrease in Variance but an increase in Bias
+4. Impact on the Loss function
+    ○ By increasing lambda value the loss function tends to move towards zero and shrink its size. This phenomenon explains why coefficients tends towards zero when lambda value is increased
+5. Why called Ridge
+    Hard constraint Ridge regression: Because the solution always lies on the ridge of the circle, that we get when we plot the lambda term in the ridge loss function
+
+NOTE: Always try using Ridge function when there are 2 or more than 2 input columns
