@@ -71,3 +71,28 @@ Using this new formula we need to calculate the loss function of both the curves
     Hard constraint Ridge regression: Because the solution always lies on the ridge of the circle, that we get when we plot the lambda term in the ridge loss function
 
 NOTE: Always try using Ridge function when there are 2 or more than 2 input columns
+
+
+Lass Regression:
+Lasso Regression is very similar to Ridge regression, here we use "MSE" as loss function and  we will add a penalty term.  And the penalty term is "l1" norm. 
+
+Therefore the equation is : L = MSE + lambda ||w||
+
+Where:
+||W|| = absolute value of |w1| + |w2|+…+|Wn|
+
+## Lasso regression's advantage:
+If we are working on a high dimensional data, for example: x1,x2,x3…..xn. The chances of overfitting in high dimensional data is very high. If we apply Ridge regression on this data the coefficients will not become zero. Whereas, if we apply Lasso regression for this dataset and if we increase lambda value sightly, it will make the less weights coefficients as zero. This means that Lasso regression is inherently performing feature selection. 
+In other words, Lasso regression is letting us know the less important features in the dataset and by making their coefficients value as zero it is performing dimensionality reduction. 
+
+## 5 key understandings about Lasso regression:
+1. How the coefficients get affected
+        ○ When we add lambda value (which will be between 0 - α ), all the coefficients will be shrink to zero. 
+2. Higher values are impacted
+        ○ Coefficients with higher values will shrink more compared to coefficients with less values and increasing alpha value will eventually zero out all features
+3. Bias variance tradeoff
+○ Bias and Variance depends on lambda value: 
+§ If lambda value is close to 0, model will show a Overfit tendency where you will notice a decrease in bias and increase in variance
+§ If lambda value is high, model will show Underfit tendency where you notice a decrease in Variance but an increase in Bias
+4. Impact on the Loss function
+By increasing lambda value the loss function tends to move to zero and we lose the shape of the curve as well
