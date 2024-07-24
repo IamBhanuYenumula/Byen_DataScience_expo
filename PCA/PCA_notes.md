@@ -4,13 +4,14 @@ PCA is unsupervised ML problem. It’s a feature extraction technique and its ma
 PCA tries to get a higher dimension dataset to a lower dimension without losing its essence. 
 
 ## Core Benefits of using PCA:
-	1. Faster execution of Algorithms 
-	2. Visualization  
-   For example if we have 10 features we cannot visualize the data, 
-   but using PCA we can reduce the dimension to 3D and visualize it
+1. Faster execution of Algorithms 
+2. Visualization  
+
+For example if we have 10 features we cannot visualize the data, but using PCA we can reduce the dimension to 3D and visualize it
 
 For instance:
 Let's say we have a real-estate price dataset with 2 input and one output column.
+
 ![image](https://github.com/user-attachments/assets/55ac8cf1-37a3-4479-afb9-4745d2a3d27c)
 
 In terms of feature selection perspective, if we want to choose one input variable out of the 2 given input variables, which one would you choose?
@@ -57,19 +58,25 @@ What will PCA solve mathematically ? What is the mathematical objective function
 
 Let's say we have a dataset in 2D and we aim to reduce it to 1D.
 Now, we have to find a single axes, on which I can project my data so that I can get the same results as I used to get in 2D.
+
 ![image](https://github.com/user-attachments/assets/c845b805-e24a-4346-88f8-7b50c8a8b50b)
 
 That axes could be this axis (orange) that we see on the image.
-Let see what will PCA solve in this situation, by taking a single point in the data. Let's say the point is X and it has its coordinates (x , y) and we can also say that X is a vector and it has 2 components one in x direction and other in y direction .
+Let see what will PCA solve in this situation, by taking a single point in the data. Let's say the point is X and it has its coordinates (x , y) and we can also say that X is a vector and it has 2 components one in x direction and other in y direction.
+
 ![image](https://github.com/user-attachments/assets/05b0d9e3-8c37-4db9-a69b-43b9252ade05)
 
 Now, we need to project this vector X on to another vector. The vector onto which our vector X will be projected, we are not worried about its magnitude we only needs its direction. 
 So, we just need a "unit vector" . Let's represent it as vector u.
 ![image](https://github.com/user-attachments/assets/1656540f-5338-494f-8d4e-3344ebbe11ed)
+
 We need to project the point x on to this unit vector.
 Projections: The scalar projection of b onto a is the length of the segment AB. The vector projection of b onto a is the vector with this length that begins at the point A points in the same direction (or opposite direction if the scalar projection is negative) as a.
+
 ![image](https://github.com/user-attachments/assets/7907ebb5-8497-470e-8b6b-b1835bea9795)
+
 Thus, mathematically, the scalar projection of b onto a is |b|cos(theta) where theta is the angle between a and b.
+
 ![image](https://github.com/user-attachments/assets/d720845e-99c2-42bc-a648-587ea8898325)
 
 So, in our case, the formula would be u.x/|u| .
@@ -102,6 +109,7 @@ Example of 3D covariance matrix :
 ### How to calculate covariance matrix :
 Step 1: Mean center all the columns
 Step 2: covariance matrix = XT.X / (n-1)
+
 ![image](https://github.com/user-attachments/assets/311dc020-4ce7-42e4-9fc5-aab44d5352c6)
 
 ### What is the importance of covariance matrix ?
