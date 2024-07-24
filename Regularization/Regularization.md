@@ -96,3 +96,26 @@ In other words, Lasso regression is letting us know the less important features 
 § If lambda value is high, model will show Underfit tendency where you notice a decrease in Variance but an increase in Bias
 4. Impact on the Loss function
 By increasing lambda value the loss function tends to move to zero and we lose the shape of the curve as well
+
+
+## ElasticNet Regression:
+It is a combination of Ridge and Lasso.
+It is mostly used in:
+	1. big datasets with many features.
+	2. When input columns have multicollinearity 
+
+
+Formula: L = ∑ (yi -y^i)^2 + a |w|^2 + b |w|
+Where a controls the Ridge penalty and b controls Lasso penalty
+Here we can call a + b as lambda
+L1 ratio = a/a+b
+
+By adjusting the balance between L1 and L2 penalties, elastic net can adapt to different situations. When the L1 ration is 0, it becomes ridge regression and when it's 1, it becomes lasso regression
+
+
+### Grid search CV and random search CV:
+
+These are two popular techniques for hyperparameter tuning in machine learning. 
+Search strategy: GridSearchCV is exhaustive, while RandomizedSearchCV is random sampling.
+RandomizedSearchCV is generally faster, especially for large parameter spaces.
+GridSearchCV guarantees finding the best combination within the specified grid, while RandomizedSearchCV may miss the optimal combination but can explore a wider range of values.
